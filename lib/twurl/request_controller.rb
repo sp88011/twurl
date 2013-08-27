@@ -15,6 +15,7 @@ module Twurl
       }
     rescue URI::InvalidURIError
       CLI.puts NO_URI_MESSAGE
+      rescue Exception => e
     end
   end
 end
